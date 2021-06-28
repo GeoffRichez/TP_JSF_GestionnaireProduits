@@ -1,0 +1,5 @@
+fr/isika/cdi9/model/Product.class
+fr/isika/cdi9/repo/Repository.class
+fr/isika/cdi9/service/ProductService.class
+fr/isika/cdi9/model/Product_.class
+fr/isika/cdi9/produit/jsf/ProductManagedBean.class
