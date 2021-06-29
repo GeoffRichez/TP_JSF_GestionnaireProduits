@@ -1,2 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PROCESS model-entity="JSFProcess"/>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:index.html" PATH="index.html"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:index.html:0" NAME="item" PATH="index.html" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ajouterProduit::ajouterProduit.xhtml"
+    NAME="output" PATH="ajouterProduit.xhtml"
+    TARGET="rules:ajouterProduit.xhtml" TITLE="ajouterProduit" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:index.html:1" NAME="item1" PATH="index.html" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="listeProduits::listeProduits.xhtml"
+    NAME="output" PATH="listeProduits.xhtml"
+    TARGET="rules:listeProduits.xhtml" TITLE="listeProduits" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:ajouterProduit.xhtml"
+  PATH="ajouterProduit.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:listeProduits.xhtml"
+  PATH="listeProduits.xhtml" SHAPE="256,177,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:listeProduits.html" PATH="listeProduits.html"
+  SHAPE="32,273,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:listeProduits.html:0" NAME="item"
+   PATH="listeProduits.html" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="index::index.xhtml" NAME="output"
+    PATH="index.xhtml" TARGET="rules:index.xhtml" TITLE="index" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:index.xhtml" PATH="index.xhtml"
+  SHAPE="240,289,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:confirmOrder.html" PATH="confirmOrder.html"
+  SHAPE="32,385,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:confirmOrder.html:0" NAME="item"
+   PATH="confirmOrder.html" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="index::index.xhtml" NAME="output"
+    PATH="index.xhtml" TARGET="rules:index.xhtml" TITLE="index" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>

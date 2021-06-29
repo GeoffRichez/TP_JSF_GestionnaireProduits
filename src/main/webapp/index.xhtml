@@ -3,19 +3,20 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="UTF-8" />
 <title>Welcome on Amazon</title>
 </head>
 <body>
-	<H1>Saisir une commande :</H1>
-	<HR />
-	<h:form id="WelcomePanier">
-		<h:inputText id="nameProduct" value="#{productManagedBean.nameProduct}">Entrer le nom du produit</h:inputText>
-		<h:inputText id="referenceProduct" value="#{productManagedBean.referenceProduct}">Entrer la référence du produit</h:inputText>
-		<h:inputText id="typeProduct" value="#{productManagedBean.priceProduct}">Entrer le type de produit</h:inputText>
-		<h:inputText id="prixProduct" value="#{productManagedBean.quantityProduct}">Entrer le prix du produit</h:inputText>
-		<h:commandButton action="#{productManagedBean.validateBasket}" value="Valider" />
+	<H1>Bienvenue sur ma page</H1>
+	<h:form>
+		<li>
+			<ul>
+				<h:link outcome="ajouterProduit">Commander</h:link>
+			</ul>
+			<ul>
+				<h:link outcome="listeProduits">Liste de produits</h:link>
+			</ul>
+		</li>
 	</h:form>
-
 </body>
 </html>

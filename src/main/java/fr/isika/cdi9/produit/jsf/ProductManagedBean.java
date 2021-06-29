@@ -38,6 +38,10 @@ public class ProductManagedBean implements Serializable {
 		return "confirmOrder";
 	}
 
+//	public String navigate() {
+//		return "ajouterProduit";
+//	}
+
 	public String getNameProduct() {
 		return nameProduct;
 	}

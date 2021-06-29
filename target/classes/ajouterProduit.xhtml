@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta charset="UTF-8"/>
+<title>Welcome on Amazon</title>
+</head>
+<body>
+	<H1>Saisir une commande :</H1>
+	<HR />
+	<h:form id="WelcomePanier">
+		<label id="label_name">Entrer le nom du produit   </label>
+		<h:inputText id="nameProduct" value="#{productManagedBean.nameProduct}"></h:inputText><br/>
+		<label id="label_name">Entrer la référence du produit   </label>
+		<h:inputText id="referenceProduct" value="#{productManagedBean.referenceProduct}"></h:inputText><br/>
+		<label id="label_name">Entrer le type de produit   </label>
+		<h:inputText id="typeProduct" value="#{productManagedBean.priceProduct}"></h:inputText><br/>
+		<label id="label_name">Entrer le prix du produit   </label>
+		<h:inputText id="prixProduct" value="#{productManagedBean.quantityProduct}"></h:inputText><br/>
+		<h:commandButton action="#{productManagedBean.validateBasket}" value="Valider" />
+	</h:form>
+
+</body>
+</html>

@@ -6,10 +6,21 @@
         http://xmlns.jcp.org/xml/ns/persistence
         http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="primary">
-		<jta-data-source>java:jboss/datasources/GestionProduitsDS</jta-data-source>
-		<properties>
-			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
-			<property name="hibernate.show_sql" value="false" />
+	<!-- <jta-data-source>java:jboss/datasources/GestionProduitsDS</jta-data-source> 
+		<properties> <property name="hibernate.hbm2ddl.auto" value="create-drop" 
+		/> <property name="hibernate.show_sql" value="false" /> -->
+
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+      <property name="javax.persistence.jdbc.url"
+        value="jdbc:mysql://localhost:3306/GestionnaireProduct?useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false" />
+      <property name="javax.persistence.jdbc.user" value="root" />
+      <property name="javax.persistence.jdbc.password"
+        value="password" />
+      <property name="hibernate.show_sql" value="true" />
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect" />
+		
+			 
 		</properties>
 	</persistence-unit>
 </persistence>
